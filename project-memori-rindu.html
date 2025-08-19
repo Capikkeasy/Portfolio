@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memori Rindu — Project Detail | Mohamad Syafiq Syami</title>
+  <meta name="description" content="Project breakdown for Memori Rindu — short emotional animation by Mohamad Syafiq Syami." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{ --bg:#0e0f12; --panel:#14161b; --text:#e7e9ee; --muted:#a7adbb; --brand:#4da3ff; --ring:0 0 0 3px rgba(77,163,255,.35);} 
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0; font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.7}
+    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
+    .container{width:min(1100px,92%); margin-inline:auto}
+    header{position:sticky; top:0; z-index:10; background:rgba(14,15,18,.7); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .menu a{color:var(--text); opacity:.9; padding:.5rem .75rem; border-radius:.6rem}
+    .menu a:hover{background:rgba(255,255,255,.06)}
+    .hero{padding:38px 0 10px}
+    .crumbs{font-size:.9rem; color:var(--muted)}
+    h1{margin:.25rem 0 .5rem; font-size:clamp(1.4rem,3vw+1rem,2.2rem)}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:.95rem}
+    .pill{border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:.25rem .6rem}
+    .grid{display:grid; gap:14px}
+    .panel{background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:18px; overflow:hidden}
+    .panel-body{padding:16px}
+    .embed{aspect-ratio:16/9; width:100%; background:#0b0c10; border:0; display:block}
+    .images{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .images img{width:100%; height:100%; object-fit:cover; border-radius:12px}
+    .two-col{display:grid; grid-template-columns:1fr; gap:14px}
+    .credits dt{color:var(--muted)} .credits dd{margin:0 0 10px}
+    .navrow{display:flex; justify-content:space-between; gap:10px; margin:22px 0 60px}
+    .btn{display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:.8rem; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(77,163,255,.14), rgba(77,163,255,.06)); color:var(--text); font-weight:600}
+    .btn.secondary{background:transparent}
+    footer{padding:30px 0 60px; color:var(--muted); text-align:center}
+    @media (min-width:900px){ .two-col{grid-template-columns:1.1fr .9fr} .images{grid-template-columns:repeat(3,1fr)} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="btn secondary" style="text-decoration:none">← Back to Portfolio</a>
+      <nav class="menu">
+        <a href="index.html#works">Works</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="crumbs">Portfolio / <strong>Memori Rindu</strong></div>
+      <h1>Memori Rindu</h1>
+      <div class="meta">
+        <span class="pill">Role: Animation, Lighting</span>
+        <span class="pill">Tools: Maya, After Effects</span>
+        <span class="pill">Year: 2025</span>
+        <span class="pill">Duration: 3–4 min</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- Local Video -->
+      <article class="panel">
+        <video class="embed" controls>
+          <source src="video/animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <div class="two-col">
+        <!-- Overview -->
+        <article class="panel">
+          <div class="panel-body">
+            <h2 style="margin-top:0">Overview</h2>
+            <p><em>Memori Rindu</em> is an emotional short about nostalgia and family. I focused on shot planning, animation polish, lighting, and color mood to support the storytelling beats.</p>
+            <ul>
+              <li>LookDev & lighting for evening interiors</li>
+              <li>Camera blocking and shot continuity</li>
+              <li>Render passes and compositing in After Effects</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Key Stills / Images -->
+        <article class="panel">
+          <div class="panel-body">
+            <h2 style="margin-top:0">Key Stills</h2>
+            <div class="images">
+              <img src="image/memori-1.jpg" alt="Key still 1 from Memori Rindu" />
+              <img src="image/memori-2.jpg" alt="Key still 2 from Memori Rindu" />
+              <img src="image/memori-3.jpg" alt="Key still 3 from Memori Rindu" />
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Extra Poli Work Gallery -->
+      <article class="panel">
+        <div class="panel-body">
+          <h2 style="margin-top:0">Work Gallery</h2>
+          <p>Some snapshots from my work during my time at Politeknik Ibrahim Sultan:</p>
+          <div class="images">
+            <img src="image/poli1.png" alt="Work snapshot 1 at Politeknik" />
+            <img src="image/poli2.png" alt="Work snapshot 2 at Politeknik" />
+            <img src="image/poli3.png" alt="Work snapshot 3 at Politeknik" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Process / Breakdown -->
+      <article class="panel">
+        <div class="panel-body">
+          <h2 style="margin-top:0">Process</h2>
+          <ol>
+            <li><strong>Story & Boards</strong> — Drafted beats, emotional arc, and transitions.</li>
+            <li><strong>Blocking</strong> — Established camera angles, timing, and silhouettes.</li>
+            <li><strong>Spline & Polish</strong> — Clean arcs, secondary motion, and facial poses.</li>
+            <li><strong>Lighting & Color</strong> — Warm evening palette for nostalgia; rim lights for focus.</li>
+            <li><strong>Compositing</strong> — Grain, bloom, and subtle vignette to unify renders.</li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- Credits -->
+      <article class="panel">
+        <div class="panel-body">
+          <h2 style="margin-top:0">Credits</h2>
+          <dl class="credits">
+            <dt>Director</dt><dd>Mohamad Syafiq Syami</dd>
+            <dt>Animation</dt><dd>Mohamad Syafiq Syami</dd>
+            <dt>Music/SFX</dt><dd>—</dd>
+            <dt>Software</dt><dd>Adobe Animate, Adobe Premiere Pro, Clip Studio paint</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- Navigation -->
+      <div class="navrow">
+        <a class="btn secondary" href="project-lowpoly/index.html">← Previous project</a>
+        <a class="btn" href="index.html#works">Back to Works</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; <span id="year"></span> Syafiq Syami. All rights reserved.</small>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
