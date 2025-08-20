@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamad Syafiq Syami | 3D Artist & Animator</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Portfolio of Mohamad Syafiq Syami — 3D artist and animation student. See demo reels, projects, and contact info." />
+  <link rel="canonical" href="https://yourwebsite.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Syafiq Syami Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohamad Syafiq Syami | 3D Artist & Animator" />
+  <meta property="og:description" content="Explore 3D works, demo reels, and contact info." />
+  <meta property="og:image" content="https://yourwebsite.com/og-thumbnail.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles (inline for demo; you can move to style.css) -->
+  <style>
+    :root{
+      --bg:#0e0f12;/* near-black */
+      --panel:#14161b;/* card */
+      --text:#e7e9ee;/* off-white */
+      --muted:#a7adbb;/* secondary */
+      --brand:#4da3ff;/* accent */
+      --brand-2:#7af0c4;/* accent 2 */
+      --ring: 0 0 0 3px rgba(77,163,255,.35);
+    }
+    html { scroll-behavior: smooth; }
+    *{ box-sizing: border-box; }
+    body{
+      margin:0; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text); background: radial-gradient(1200px 600px at 20% -10%, rgba(77,163,255,.12), transparent 60%),
+                         radial-gradient(900px 500px at 110% 10%, rgba(122,240,196,.10), transparent 60%),
+                         var(--bg);
+      line-height:1.7;
+    }
+    a{ color:var(--brand); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .container{ width:min(1100px, 92%); margin-inline:auto; }
+
+    /* Skip link */
+    .skip-link{ position:absolute; left:-1000px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus{ left:16px; top:16px; width:auto; height:auto; background:#000; color:#fff; padding:.5rem .75rem; border-radius:.5rem; z-index:999; }
+
+    /* Header */
+    header{ position: sticky; top:0; z-index:50; background: rgba(14,15,18,.7); backdrop-filter: blur(6px); border-bottom:1px solid rgba(255,255,255,.06); }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+    .brand{ display:flex; align-items:center; gap:.75rem; }
+    .brand h1{ font-size:1.25rem; margin:0; letter-spacing:.3px; }
+    .tag{ color:var(--muted); font-weight:500; font-size:.9rem; }
+    .menu{ display:flex; align-items:center; gap:1rem; }
+    .menu a{ color:var(--text); opacity:.9; padding:.5rem .75rem; border-radius:.6rem; }
+    .menu a:hover{ background:rgba(255,255,255,.06); }
+
+    /* Hero */
+    .hero{ padding:64px 0 34px; text-align:center; }
+    .hero h2{ font-size:clamp(1.6rem, 3vw + 1rem, 2.6rem); margin:.3rem 0 .4rem; }
+    .hero p{ color:var(--muted); margin:0 auto; max-width:780px; }
+    .cta-row{ margin-top:18px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn{
+      display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:.8rem; border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(77,163,255,.14), rgba(77,163,255,.06)); color:var(--text); font-weight:600;
+      box-shadow: 0 10px 30px rgba(77,163,255,.1);
+    }
+    .btn.secondary{ background:transparent; border-color: rgba(255,255,255,.12); }
+    .btn:focus{ outline:none; box-shadow: var(--ring); }
+
+    section{ padding:54px 0; }
+    h3.section-title{ font-size:1.4rem; letter-spacing:.2px; margin:0 0 14px; }
+
+    /* About */
+    .about{ display:grid; grid-template-columns: 1fr; gap:1.25rem; }
+    .about-card{ background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:18px; padding:22px; }
+    .tools{ display:flex; flex-wrap:wrap; gap:.5rem; }
+    .chip{ background: rgba(122,240,196,.12); color:#d8fff2; border:1px solid rgba(122,240,196,.35); padding:.35rem .6rem; border-radius:999px; font-size:.85rem; }
+
+    /* Works */
+    .grid{ display:grid; grid-template-columns: 1fr; gap:16px; }
+    .card{ background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:18px; overflow:hidden; display:flex; flex-direction:column; }
+    .thumb{ aspect-ratio:16/9; width:100%; object-fit:cover; background:#0b0c10; }
+    .card-body{ padding:16px 16px 18px; display:grid; gap:8px; }
+    .card h4{ margin:0; font-size:1.1rem; }
+    .muted{ color:var(--muted); }
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; }
+
+    /* Contact */
+    .contact-list{ display:grid; gap:8px; }
+    .contact-list a{ display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .75rem; border-radius:.6rem; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
+
+    /* Footer */
+    footer{ padding:26px 0 60px; color:var(--muted); text-align:center; }
+
+    /* Responsive */
+    @media (min-width: 700px){
+      .about{ grid-template-columns: .9fr 1.1fr; }
+      .grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1000px){
+      .grid{ grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamad Syafiq Syami",
+    "jobTitle": "3D Artist & Animator",
+    "url": "https://yourwebsite.com/",
+    "sameAs": [
+      "https://instagram.com/syafiqsyami",
+      "https://www.artstation.com/yourname"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.88L18.18 22 12 18.56 5.82 22 7 14.15l-5-4.88 6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.2"/></svg>
+        <div>
+          <h1 aria-label="Site of Mohamad Syafiq Syami">Syafiq Syami</h1>
+          <div class="tag">3D Artist • Animator • Scriptwriter</div>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav> 
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-label="Intro">
+      <h2>Crafting emotive 3D stories & visuals</h2>
+      <p>I’m an animation student from Politeknik Ibrahim Sultan (Pasir Gudang), focused on 3D modeling, animation, and telling human-centered stories with strong visual emotion.</p>
+      <div class="cta-row">
+        <a class="btn" href="#works">View Projects</a>
+        <a class="btn secondary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h3 id="about-title" class="section-title">About Me</h3>
+      <div class="about">
+        <div class="about-card">
+          <p>My name is <strong>Mohamad Syafiq Syami</strong>. I’m passionate about 3D modeling, animation, storytelling, and creating emotionally engaging visuals. Currently pursuing my diploma in animation.</p>
+          <p class="muted">Based in Selangor, Malaysia • Now In internships (Studio Kayangan).</p>
+        </div>
+        <div class="about-card">
+          <h4 style="margin:0 0 .5rem">Tools & Skills</h4>
+          <div class="tools" aria-label="Tools list">
+            <span class="chip" title="Blender">Blender</span>
+            <span class="chip" title="Autodesk Maya">Autodesk Maya</span>
+            <span class="chip" title="Adobe After Effects">After Effects</span>
+            <span class="chip" title="Adobe Premiere Pro">Premiere Pro</span>
+            <span class="chip" title="Adobe Illustrator">Illustrator</span>
+            <span class="chip" title="Adobe Photoshop">Photoshop</span>
+            <span class="chip" title="Autodesk SketchBook">SketchBook</span>
+            <span class="chip" title="Storyboarding">Storyboarding</span>
+            <span class="chip" title="Look Development">Canva</span>
+            <span class="chip" title="Lighting">Graphic Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works" aria-labelledby="works-title">
+      <h3 id="works-title" class="section-title">Selected Works</h3>
+      <div class="grid" role="list">
+        
+        <!-- Project 1 -->
+        <article class="card" role="listitem">
+          <img class="thumb" loading="lazy" src="image1.png" alt="Frames from Memori Rindu short animation" />
+          <div class="card-body">
+            <h4>Final Year Project: <em>Memori Rindu</em></h4>
+            <p class="muted">Emotional short about nostalgia and family. Produced with Adobe Animate & Adobe Premiere Pro.</p>
+            <div class="actions">
+              <a class="btn" href="project-memori-rindu.html">View Project</a>
+              <a class="btn secondary" href="https://heyzine.com/flip-book/4d3c254b3e.html" aria-disabled="true"> Case Study </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card" role="listitem">
+          <img class="thumb" loading="lazy" src="image3.png" alt="Stills from Faris & Misi Anti-Denggi animation" />
+          <div class="card-body">
+            <h4><em>Faris &amp; Misi Anti-Denggi</em> (Intern Project)</h4>
+            <p class="muted">Public awareness animation for youth. Realistic 3D style. Created 100% using AI Chatgpt, HeyGen AI and Pollo AI(2 months timeline).</p>
+            <div class="actions">
+              <a class="btn secondary" href="#" aria-disabled="true">Case Study (soon)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card" role="listitem">
+          <img class="thumb" loading="lazy" src="image2.png" alt="Poster still for Bersatu 2D film" />
+          <div class="card-body">
+            <h4><em>Bersatu</em> — 2D Animated Short</h4>
+            <p class="muted">Course project for 2D Animation. A story about unity and friendship.</p>
+            <div class="actions">
+              <a class="btn secondary" href="#" aria-disabled="true">Storyboard (soon)</a>
+            </div>
+          </div>
+        </article> 
+        
+        <!-- Project 4 -->
+         <article class="card" role="listitem">
+            <img class="thumb" loading="lazy" src="image/image4.png" alt="Frames from Memori Rindu short animation" />
+            <div class="card-body">
+              <h4><em>Stress</em> — 2D Animated Short</h4>
+              <p class="muted">Emotional short about nostalgia and family. Produced with Adobe Animate and Edited with Adobe Premiere Pro.</p>
+              <div class="actions">
+                <a class="btn" href="https://www.youtube.com/watch?v=oJWhFhGku4c" target="_blank" rel="noopener">Tonton</a>
+                <a class="btn secondary" href="#" aria-disabled="true">Breakdown (soon)</a>
+              </div>
+            </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h3 id="contact-title" class="section-title">Contact</h3>
+      <div class="contact-list">
+        <a href="mailto:syafiqsyami351@gmail.com"><span aria-hidden="true">📧</span> syafiqsyami351@gmail.com</a>
+        <a href="tel:+601111871927"><span aria-hidden="true">📞</span> +60 11-1187 1927</a>
+        <a href="https://instagram.com/syfiqsymii" target="_blank" rel="noopener"><span aria-hidden="true">📷</span> @syfiqsymii</a>
+        <a href="https://www.behance.net/syafiqsyami" target="_blank" rel="noopener"><span aria-hidden="true">🎨</span> Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; <span id="year"></span> Syafiq Syami. All rights reserved.</small>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
